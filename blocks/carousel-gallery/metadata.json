@@ -1,0 +1,29 @@
+{
+  "variantName": "carousel-gallery",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "multiple",
+    "purpose": "horizontally scrolling gallery of square social-post images, 3 per view on desktop, with prev/next arrows",
+    "structure": "row of square image tiles (optional caption overlay) + prev/next arrows",
+    "position": "bottom",
+    "isFullWidth": false,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "one row per gallery item: cell 1 = square image (optionally linked); optional cell 2 = caption paragraph (e.g. username). Shows 1 / 2 / 3 items per view at mobile / tablet / desktop",
+    "buttonCount": 0,
+    "imageCount": 9
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.millenniumhotels.com/", "instanceId": null, "screenshot": "../migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-30T00:00:00.000Z"
+  },
+  "options": [],
+  "memberVariantIds": []
+}

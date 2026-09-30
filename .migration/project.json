@@ -1,0 +1,12 @@
+{
+  "type": "da",
+  "sites": {
+    "sheongperk-xscrda-20260930": {
+      "previewOrg": "sheongperk",
+      "previewSite": "sheongperk-xscrda-20260930",
+      "contentHostUrl": "https://content.da.live/sheongperk/sheongperk-xscrda-20260930/",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json",
+      "botProtected": true
+    }
+  }
+}

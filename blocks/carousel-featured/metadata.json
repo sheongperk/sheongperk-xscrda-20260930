@@ -1,0 +1,29 @@
+{
+  "variantName": "carousel-featured",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "large",
+    "purpose": "one-at-a-time slider of featured hotels or restaurants: full-bleed image with an overlapping white panel (eyebrow, H3 name, description, CTA button / secondary link) and prev/next arrows",
+    "structure": "slides of image + overlapping panel with eyebrow + heading + text + CTAs; prev/next arrows",
+    "position": "middle",
+    "isFullWidth": true,
+    "hasGrid": false
+  },
+  "contentPattern": {
+    "structure": "one row per slide: cell 1 = image; cell 2 = eyebrow paragraph (location / hotel name), h3 name (optionally linked), optional detail paragraph (e.g. 'Cuisine: ...'), description paragraph, CTA link(s) (e.g. 'Discover Now', or 'VIEW RESTAURANT' + 'BOOK A TABLE')",
+    "buttonCount": 2,
+    "imageCount": 6
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.millenniumhotels.com/", "instanceId": null, "screenshot": "../migration-work/screenshot.png" }
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-09-30T00:00:00.000Z"
+  },
+  "options": [],
+  "memberVariantIds": []
+}

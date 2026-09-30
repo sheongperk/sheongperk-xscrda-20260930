@@ -1,0 +1,29 @@
+{
+  "variantName": "columns-benefits",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "imagePattern": "large",
+    "purpose": "full-bleed lifestyle banner with an overlapping white strip of 3 icon + label benefit links",
+    "structure": "banner image + overlapping row of 3 icon/label links",
+    "position": "middle",
+    "isFullWidth": true,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "row 1 (optional) = single cell with the banner image; row 2 = one cell per benefit, each an icon image + linked label (typically 3). A single-cell image-only first row is treated as the banner; without it the benefits render on their own",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.millenniumhotels.com/", "instanceId": null, "screenshot": "../migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-30T00:00:00.000Z"
+  },
+  "options": [],
+  "memberVariantIds": []
+}

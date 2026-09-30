@@ -1,0 +1,152 @@
+/* hero-video: full-bleed background video + light caption bar */
+
+/* full-bleed: release the default section content width */
+main > .section > .hero-video-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.hero-video {
+  position: relative;
+  background-color: #fdfdfd;
+  font-family: var(--body-font-family);
+}
+
+/* media */
+.hero-video .hero-video-media {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+.hero-video .hero-video-media video,
+.hero-video .hero-video-media picture,
+.hero-video .hero-video-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* caption bar */
+.hero-video .hero-video-content {
+  height: 69px;
+  background-color: #fdfdfd;
+}
+
+/* slide counter from the source carousel (decorative, hidden from AT) */
+.hero-video .hero-video-content::before {
+  content: '1 / 1' / '';
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  color: var(--body-text-color);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 69px;
+  letter-spacing: 0.7px;
+}
+
+.hero-video .hero-video-content p {
+  margin: 0;
+}
+
+.hero-video .hero-video-content > p:not(.button-wrapper) {
+  position: absolute;
+  bottom: 0;
+  left: 87px;
+  right: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 69px;
+  text-align: center;
+}
+
+.hero-video .hero-video-content > p:not(.button-wrapper) a:any-link {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: auto;
+}
+
+/* Book Now: black tab pinned to the right edge of the video */
+
+/* the booking CTA lives in the mobile header bar below 1200px, as on the source */
+.hero-video .hero-video-content > .button-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 69px;
+  z-index: 1;
+  display: none;
+}
+
+main .hero-video a.button.primary:any-link {
+  position: relative;
+  display: block;
+  padding: 24px 48px 24px 24px;
+  border: 0;
+  background-color: #000;
+  color: var(--text-light);
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+main .hero-video a.button.primary:any-link::after {
+  content: '\2190' / '';
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  font-size: 14px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+@media (width >= 900px) {
+  .hero-video .hero-video-media {
+    height: calc(clamp(540px, 53.75vw, 1032px) - 69px);
+  }
+
+  .hero-video .hero-video-content::before {
+    bottom: 16px;
+    font-size: 16px;
+    line-height: 53px;
+    letter-spacing: 0.8px;
+  }
+
+  .hero-video .hero-video-content > p:not(.button-wrapper) {
+    bottom: 16px;
+    right: auto;
+    display: block;
+    height: 53px;
+    text-align: start;
+  }
+
+  .hero-video .hero-video-content > p:not(.button-wrapper) a:any-link {
+    font-size: 13px;
+    line-height: 53px;
+    letter-spacing: 0.65px;
+    white-space: nowrap;
+  }
+
+  .hero-video .hero-video-content > .button-wrapper {
+    top: 96px;
+    bottom: auto;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero-video .hero-video-content > .button-wrapper {
+    display: block;
+  }
+}

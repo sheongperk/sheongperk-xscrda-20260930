@@ -1,0 +1,21 @@
+/* Millennium Hotels brand tokens (extracted from https://www.millenniumhotels.com/) */
+:root {
+  /* fonts - Optima / Nimbus Sans L are not on Adobe Fonts or Google Fonts, so use system fallbacks */
+  --brand-heading-font-family: optima, candara, 'Segoe UI', 'Noto Sans', sans-serif;
+  --brand-body-font-family: 'Nimbus Sans L', 'Helvetica Neue', helvetica, arial, sans-serif;
+
+  /* colors */
+  --brand-background-color: #fff;
+  --brand-text-color: #000;
+  --brand-body-text-color: #4b4b4b;
+  --brand-dark-color: #1d1d1d;
+  --brand-light-color: #f0f0f0;
+  --brand-link-color: #000;
+  --brand-link-hover-color: #000;
+  --brand-light-text-color: #fff;
+  --brand-theme-color: #1d1d1d;
+
+  /* spacing */
+  --brand-content-width: 1152px;
+  --brand-section-title-spacing: 32px;
+}

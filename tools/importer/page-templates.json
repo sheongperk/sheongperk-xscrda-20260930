@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.millenniumhotels.com/"
+      ],
+      "representativeUrl": "https://www.millenniumhotels.com/",
+      "description": "Millennium Hotels homepage: hero video, loyalty promo, featured offers, featured hotels and dining carousels, social gallery",
+      "blocks": [
+        {
+          "name": "hero-video",
+          "instances": [
+            "#home-hero"
+          ]
+        },
+        {
+          "name": "columns-benefits",
+          "instances": [
+            ".my-millennium.home-page-new .my-millennium-container"
+          ]
+        },
+        {
+          "name": "cards-offer",
+          "instances": [
+            ".offers2__listing"
+          ]
+        },
+        {
+          "name": "carousel-featured",
+          "instances": [
+            "#home-hotels .new-look-hotel-dining__list",
+            "#home-dinings .new-look-hotel-dining__list"
+          ]
+        },
+        {
+          "name": "carousel-gallery",
+          "instances": [
+            ".c-instagram-gallery"
+          ]
+        }
+      ],
+      "urlPattern": "/",
+      "sections": [
+        {
+          "id": "1",
+          "name": "Hero video",
+          "selector": [
+            "#home-hero"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "2",
+          "name": "MyMillennium loyalty promo",
+          "selector": [
+            ".my-millennium.home-page-new"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-benefits"
+          ],
+          "defaultContent": [
+            ".my-millennium.home-page-new > .newlook-hotel-configuration-title"
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Featured Offers",
+          "selector": [
+            "#home-offers",
+            ".new-look-hotel-offer.home-page-new"
+          ],
+          "style": "grey",
+          "blocks": [
+            "cards-offer"
+          ],
+          "defaultContent": [
+            "#home-offers > .newlook-hotel-configuration-title"
+          ]
+        },
+        {
+          "id": "4",
+          "name": "Featured Hotels",
+          "selector": [
+            "#home-hotels"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-featured"
+          ],
+          "defaultContent": [
+            "#home-hotels > .newlook-hotel-configuration-title"
+          ]
+        },
+        {
+          "id": "5",
+          "name": "Dine With Us",
+          "selector": [
+            "#home-dinings"
+          ],
+          "style": "grey",
+          "blocks": [
+            "carousel-featured"
+          ],
+          "defaultContent": [
+            "#home-dinings > .newlook-hotel-configuration-title"
+          ]
+        },
+        {
+          "id": "6",
+          "name": "Connect With Us",
+          "selector": [
+            "#home-gallery",
+            ".new-look-hotel__wall.home-page-new"
+          ],
+          "style": "grey",
+          "blocks": [
+            "carousel-gallery"
+          ],
+          "defaultContent": [
+            "#home-gallery > .newlook-hotel-configuration-title"
+          ]
+        }
+      ]
+    }
+  ]
+}

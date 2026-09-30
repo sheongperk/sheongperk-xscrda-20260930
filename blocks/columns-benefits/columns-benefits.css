@@ -1,0 +1,142 @@
+/* columns-benefits: full-bleed banner + overlapping strip of icon/label benefit links */
+
+/* full-bleed: release the section's content-width constraint for this block only */
+main > .section > .columns-benefits-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+/* block sits flush against the following section (source has no gap) */
+main > .section.columns-benefits-container:has(> .columns-benefits-wrapper:last-child) {
+  margin-bottom: 0;
+}
+
+.columns-benefits {
+  position: relative;
+  color: var(--text-color);
+}
+
+.columns-benefits .columns-benefits-banner picture,
+.columns-benefits .columns-benefits-banner img {
+  display: block;
+  width: 100%;
+}
+
+.columns-benefits .columns-benefits-banner img {
+  height: 240px;
+  object-fit: cover;
+}
+
+/* mobile: benefits stack below the banner as a plain list */
+.columns-benefits .columns-benefits-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 24px 55px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.columns-benefits .columns-benefits-item {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.columns-benefits .columns-benefits-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+}
+
+.columns-benefits .columns-benefits-icon picture,
+.columns-benefits .columns-benefits-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.columns-benefits .columns-benefits-label {
+  min-width: 0;
+  padding-left: 20px;
+}
+
+.columns-benefits .columns-benefits-label p {
+  margin: 0;
+  overflow: hidden;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.columns-benefits .columns-benefits-label a:any-link {
+  color: var(--text-color);
+  font: inherit;
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .columns-benefits {
+    padding-bottom: 60px;
+  }
+
+  .columns-benefits.no-banner {
+    padding-bottom: 0;
+  }
+
+  .columns-benefits .columns-benefits-banner img {
+    height: auto;
+    aspect-ratio: 45 / 16;
+  }
+
+  /* desktop: white strip overlapping the bottom of the banner */
+  .columns-benefits .columns-benefits-list {
+    position: absolute;
+    bottom: 30px;
+    left: 16.667%;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 16px 64px;
+    background-color: rgb(255 255 255 / 97%);
+    box-shadow: 0 2px 15px 0 rgb(0 0 0 / 7%);
+  }
+
+  .columns-benefits.no-banner .columns-benefits-list {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .columns-benefits .columns-benefits-item {
+    flex: 0 1 240px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .columns-benefits .columns-benefits-label {
+    width: 100%;
+    padding: 8px 0 0;
+    text-align: center;
+  }
+}
+
+@media (width >= 1200px) {
+  .columns-benefits {
+    padding-bottom: 88px;
+  }
+
+  .columns-benefits .columns-benefits-list {
+    padding: 24px 96px;
+  }
+}

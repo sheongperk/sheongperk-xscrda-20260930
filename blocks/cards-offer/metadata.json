@@ -1,0 +1,29 @@
+{
+  "variantName": "cards-offer",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "imagePattern": "large",
+    "purpose": "featured offer: full-bleed image with an overlapping white panel (eyebrow, title, BOOK NOW button); 2-up grid when more than one offer",
+    "structure": "image + overlapping panel with eyebrow + heading + CTA",
+    "position": "middle",
+    "isFullWidth": true,
+    "hasGrid": true
+  },
+  "contentPattern": {
+    "structure": "one row per offer: cell 1 = image; cell 2 = eyebrow paragraph, h3 (linked) title, CTA link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.millenniumhotels.com/", "instanceId": null, "screenshot": "../migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-30T00:00:00.000Z"
+  },
+  "options": [],
+  "memberVariantIds": []
+}

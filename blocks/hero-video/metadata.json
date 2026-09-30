@@ -1,0 +1,29 @@
+{
+  "variantName": "hero-video",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "imagePattern": "background",
+    "purpose": "full-bleed autoplay brand video with caption link 'Your next adventure awaits' and Book Now CTA",
+    "structure": "background video + caption/CTA links row",
+    "position": "top",
+    "isFullWidth": true,
+    "hasGrid": false
+  },
+  "contentPattern": {
+    "structure": "row 1 = link to an .mp4 video (optional poster image), rendered as a muted autoplay looping background video; row 2 = paragraph links (caption link, 'Book Now' CTA)",
+    "buttonCount": 2,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [
+      { "url": "https://www.millenniumhotels.com/", "instanceId": null, "screenshot": "../migration-work/screenshot.png" }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-30T00:00:00.000Z"
+  },
+  "options": [],
+  "memberVariantIds": []
+}
