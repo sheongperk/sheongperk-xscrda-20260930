@@ -23,12 +23,23 @@ async function fetchNav() {
  * @param {string} base base path for relative images
  */
 function fixImagePaths(root, base) {
-  root.querySelectorAll('img').forEach((img) => {
-    const src = img.getAttribute('src');
-    if (src && !/^(https?:)?\/\//.test(src) && !src.startsWith('/')) {
-      img.setAttribute('src', `${base}${src}`);
-    }
+  [['img', 'src'], ['source', 'srcset']].forEach(([tag, attr]) => {
+    root.querySelectorAll(`${tag}[${attr}]`).forEach((el) => {
+      const value = el.getAttribute(attr);
+      if (!/^(https?:)?\/\//.test(value) && !value.startsWith('/')) {
+        el.setAttribute(attr, `${base}${value}`);
+      }
+    });
   });
+}
+
+/**
+ * Unwraps paragraphs directly inside a list item. Published content wraps the
+ * label (and icon) of items that hold a nested list in a <p>.
+ * @param {Element} li list item
+ */
+function unwrapParagraphs(li) {
+  li.querySelectorAll(':scope > p').forEach((p) => p.replaceWith(...p.childNodes));
 }
 
 function closeAll(nav, except) {
@@ -58,7 +69,7 @@ function ownText(li) {
 function buildDropdown(li, nav) {
   const panel = li.querySelector(':scope > ul');
   const label = ownText(li);
-  const icon = li.querySelector(':scope > img');
+  const icon = li.querySelector(':scope > picture, :scope > img');
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.className = 'nav-tool-toggle';
@@ -348,6 +359,7 @@ export default async function decorate(block) {
   if (tools) {
     tools.querySelectorAll(':scope > ul > li').forEach((li) => {
       li.classList.add('nav-tool');
+      unwrapParagraphs(li);
       if (li.querySelector(':scope > ul')) buildDropdown(li, nav);
       else if (!li.querySelector('a') && search) buildSearch(search, li, nav);
     });
