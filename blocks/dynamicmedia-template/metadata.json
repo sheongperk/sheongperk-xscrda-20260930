@@ -1,0 +1,26 @@
+{
+  "variantName": "dynamicmedia-template",
+  "baseBlock": "dynamicmedia-template",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "single",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "renders a Dynamic Media (Scene7) template image with variable substitutions",
+    "structure": "single generated image"
+  },
+  "contentPattern": {
+    "structure": "row 1 = source mode (inline); row 2 = Dynamic Media template URL; row 3 = comma-separated variable mapping (key=value)",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

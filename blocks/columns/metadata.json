@@ -1,0 +1,26 @@
+{
+  "variantName": "columns",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "multiple",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": true,
+    "purpose": "side-by-side content columns",
+    "structure": "rows of N columns; image-only columns and video links get special treatment"
+  },
+  "contentPattern": {
+    "structure": "each row has one cell per column; a cell holding only an image becomes an image column; a cell whose link points to a video (mp4/YouTube) renders a video",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

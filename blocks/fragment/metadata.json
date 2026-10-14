@@ -1,0 +1,26 @@
+{
+  "variantName": "fragment",
+  "baseBlock": "fragment",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "none",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "inlines another page (fragment) into the current page",
+    "structure": "content of the referenced fragment"
+  },
+  "contentPattern": {
+    "structure": "single cell with a link (or path text) to the fragment page",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

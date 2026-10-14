@@ -1,0 +1,26 @@
+{
+  "variantName": "accordion",
+  "baseBlock": "accordion",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "none",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "collapsible question/answer or topic list",
+    "structure": "stacked details/summary items"
+  },
+  "contentPattern": {
+    "structure": "one row per item: cell 1 = label (summary); cell 2 = body content",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

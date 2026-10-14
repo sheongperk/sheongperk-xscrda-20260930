@@ -1,0 +1,39 @@
+{
+  "variantName": "table",
+  "baseBlock": "table",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "none",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": true,
+    "purpose": "tabular data",
+    "structure": "HTML table with optional header row"
+  },
+  "contentPattern": {
+    "structure": "one row per table row, one cell per column; first row is the header unless no-header is set",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [
+    {
+      "class": "striped",
+      "label": "Striped"
+    },
+    {
+      "class": "bordered",
+      "label": "Bordered"
+    },
+    {
+      "class": "no-header",
+      "label": "No Header"
+    }
+  ],
+  "memberVariantIds": []
+}

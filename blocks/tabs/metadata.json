@@ -1,0 +1,31 @@
+{
+  "variantName": "tabs",
+  "baseBlock": "tabs",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "single",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "tabbed panels of related content",
+    "structure": "tab list + one panel per tab (heading, image, text)"
+  },
+  "contentPattern": {
+    "structure": "one row per tab: cell 1 = tab label; cell 2 = panel heading; cell 3 = heading level (h2-h6); cell 4 = image; cell 5 = panel body",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [
+    {
+      "class": "card-style-tab",
+      "label": "Card Style Tab"
+    }
+  ],
+  "memberVariantIds": []
+}

@@ -1,0 +1,31 @@
+{
+  "variantName": "video",
+  "baseBlock": "video",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "single",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "plays a YouTube, Vimeo or MP4 video",
+    "structure": "video player with optional poster placeholder"
+  },
+  "contentPattern": {
+    "structure": "single cell: optional poster image + link to the video",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [
+    {
+      "class": "autoplay",
+      "label": "Autoplay"
+    }
+  ],
+  "memberVariantIds": []
+}

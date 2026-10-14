@@ -1,1 +1,50 @@
-/* stylelint-disable no-empty-source */
+/*
+ * Fragment Block
+ * Include content on a page as a fragment.
+ * https://www.aem.live/developer/block-collection/fragment
+ *
+ * The fragment's sections are nested inside the host section's wrapper, so the
+ * top-level section rules in styles.css (main > .section ...) don't reach them.
+ */
+
+.fragment > .section + .section {
+  margin-top: 40px;
+}
+
+.fragment > .section:empty {
+  display: none;
+}
+
+/* section intro (default content), mirroring the top-level section rules */
+.fragment > .section > .default-content-wrapper {
+  padding-top: var(--brand-section-title-spacing, 32px);
+  margin-bottom: 24px;
+}
+
+.fragment > .section > .default-content-wrapper h2 {
+  margin: 0 0 16px;
+}
+
+.fragment > .section > .default-content-wrapper p {
+  margin: 0;
+}
+
+.fragment > .section > .default-content-wrapper p.button-wrapper {
+  display: inline-block;
+  margin: 16px 24px 0 0;
+}
+
+/* keep content off the edges of tinted sections */
+.fragment > .section.grey,
+.fragment > .section.light,
+.fragment > .section.highlight {
+  padding: 0 16px 24px;
+}
+
+@media (width >= 900px) {
+  .fragment > .section.grey,
+  .fragment > .section.light,
+  .fragment > .section.highlight {
+    padding: 0 24px 32px;
+  }
+}

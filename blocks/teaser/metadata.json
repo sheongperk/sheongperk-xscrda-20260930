@@ -1,0 +1,26 @@
+{
+  "variantName": "teaser",
+  "baseBlock": "teaser",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "background",
+    "position": "middle",
+    "isFullWidth": true,
+    "hasGrid": false,
+    "purpose": "promotional teaser with background image or video, swoosh overlay, title and button",
+    "structure": "background media + title + button"
+  },
+  "contentPattern": {
+    "structure": "row 1 = title; row 2 = style (image or video); row 3 = video URL; row 4 = background image; row 5 = button text",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

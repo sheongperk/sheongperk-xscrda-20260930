@@ -1,0 +1,26 @@
+{
+  "variantName": "form",
+  "baseBlock": "form",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "none",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "form rendered from a spreadsheet definition",
+    "structure": "generated form fields and submit button"
+  },
+  "contentPattern": {
+    "structure": "links: one to the form definition .json on the same origin, one to the submit endpoint",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

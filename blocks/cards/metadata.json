@@ -1,0 +1,31 @@
+{
+  "variantName": "cards",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "multiple",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": true,
+    "purpose": "grid of image + text cards",
+    "structure": "list of cards, image above body"
+  },
+  "contentPattern": {
+    "structure": "one row per card: cell 1 = image; cell 2 = body (heading, text, CTA link); optional cell 3 = card style class (default); optional cell 4 = CTA style class (default, cta-button, cta-button-secondary, cta-button-dark)",
+    "buttonCount": 1,
+    "imageCount": 3
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [
+    {
+      "class": "gradient",
+      "label": "Gradient"
+    }
+  ],
+  "memberVariantIds": []
+}

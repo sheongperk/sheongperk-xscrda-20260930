@@ -1,0 +1,26 @@
+{
+  "variantName": "carousel",
+  "baseBlock": "carousel",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "multiple",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "intro text beside a sliding set of image cards",
+    "structure": "default-content intro + slider of cards with prev/next controls"
+  },
+  "contentPattern": {
+    "structure": "optional leading rows without images = intro content (heading, text); then one row per slide with 4 cells: image, body (heading, text, CTA), card style, CTA style",
+    "buttonCount": 1,
+    "imageCount": 3
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

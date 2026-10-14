@@ -1,0 +1,26 @@
+{
+  "variantName": "embed",
+  "baseBlock": "embed",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "single",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "embeds third-party media (YouTube, Vimeo, Twitter or any iframe URL)",
+    "structure": "responsive 16:9 iframe, optional click-to-play placeholder image"
+  },
+  "contentPattern": {
+    "structure": "single cell: optional placeholder image + link to the embeddable URL",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [],
+  "memberVariantIds": []
+}

@@ -1,0 +1,31 @@
+{
+  "variantName": "search",
+  "baseBlock": "search",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "none",
+    "position": "middle",
+    "isFullWidth": false,
+    "hasGrid": false,
+    "purpose": "site search box with live results from the query index",
+    "structure": "search input + results list"
+  },
+  "contentPattern": {
+    "structure": "optional single cell with a link to the search index JSON (defaults to /query-index.json)",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [
+    {
+      "class": "minimal",
+      "label": "Minimal"
+    }
+  ],
+  "memberVariantIds": []
+}

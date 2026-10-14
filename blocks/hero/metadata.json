@@ -1,0 +1,63 @@
+{
+  "variantName": "hero",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "imagePattern": "background",
+    "position": "top",
+    "isFullWidth": true,
+    "hasGrid": false,
+    "purpose": "page-opening banner with heading, text and CTA",
+    "structure": "image + text panel, layout set by option class"
+  },
+  "contentPattern": {
+    "structure": "row 1 = image; row 2 = heading, text, CTA link. Optional config rows 3-6 (underline true/false, layout class, CTA style, background class) are read and hidden",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0
+  },
+  "options": [
+    {
+      "class": "image-left",
+      "label": "Image Left"
+    },
+    {
+      "class": "image-right",
+      "label": "Image Right"
+    },
+    {
+      "class": "image-top",
+      "label": "Image Top"
+    },
+    {
+      "class": "image-bottom",
+      "label": "Image Bottom"
+    },
+    {
+      "class": "image-background-text-left",
+      "label": "Image Background Text Left"
+    },
+    {
+      "class": "image-background-text-right",
+      "label": "Image Background Text Right"
+    },
+    {
+      "class": "theme-dark",
+      "label": "Theme Dark"
+    },
+    {
+      "class": "theme-light",
+      "label": "Theme Light"
+    },
+    {
+      "class": "removeunderline",
+      "label": "No Heading Underline"
+    }
+  ],
+  "memberVariantIds": []
+}
