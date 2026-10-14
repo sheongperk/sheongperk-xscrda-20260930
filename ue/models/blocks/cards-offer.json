@@ -1,0 +1,68 @@
+{
+  "definitions": [
+    {
+      "title": "Cards Offer",
+      "id": "cards-offer",
+      "model": "cards-offer",
+      "filter": "cards-offer",
+      "plugins": {
+        "da": {
+          "rows": 0,
+          "columns": 0
+        }
+      }
+    },
+    {
+      "title": "Offer Card",
+      "id": "cards-offer-item",
+      "model": "cards-offer-item",
+      "plugins": {
+        "da": {
+          "rows": 1,
+          "columns": 2,
+          "fields": [
+            { "name": "image", "selector": "div:nth-child(1)>picture>img[src]" },
+            { "name": "imageAlt", "selector": "div:nth-child(1)>picture>img[alt]" },
+            { "name": "text", "selector": "div:nth-child(2)" }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "cards-offer-item",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Image Alt",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text (region, heading, CTA)",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "cards-offer",
+      "components": [
+        "cards-offer-item"
+      ]
+    }
+  ]
+}

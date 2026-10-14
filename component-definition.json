@@ -81,6 +81,43 @@
           }
         },
         {
+          "title": "Cards Offer",
+          "id": "cards-offer",
+          "model": "cards-offer",
+          "filter": "cards-offer",
+          "plugins": {
+            "da": {
+              "rows": 0,
+              "columns": 0
+            }
+          }
+        },
+        {
+          "title": "Offer Card",
+          "id": "cards-offer-item",
+          "model": "cards-offer-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "model": "cards",
@@ -116,6 +153,80 @@
                 {
                   "name": "variant",
                   "selector": "div:nth-child(3)>:first-child"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Carousel Featured",
+          "id": "carousel-featured",
+          "model": "carousel-featured",
+          "filter": "carousel-featured",
+          "plugins": {
+            "da": {
+              "rows": 0,
+              "columns": 0
+            }
+          }
+        },
+        {
+          "title": "Featured Slide",
+          "id": "carousel-featured-slide",
+          "model": "carousel-featured-slide",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Carousel Gallery",
+          "id": "carousel-gallery",
+          "model": "carousel-gallery",
+          "filter": "carousel-gallery",
+          "plugins": {
+            "da": {
+              "rows": 0,
+              "columns": 0
+            }
+          }
+        },
+        {
+          "title": "Gallery Item",
+          "id": "carousel-gallery-item",
+          "model": "carousel-gallery-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "caption",
+                  "selector": "div:nth-child(2)"
                 }
               ]
             }
@@ -161,6 +272,38 @@
                 {
                   "name": "cta",
                   "selector": "div:nth-child(4)>p"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Columns Benefits",
+          "id": "columns-benefits",
+          "model": "columns-benefits",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"columns-benefits\"><div><div></div></div><div><div></div><div></div><div></div></div></div>",
+              "fields": [
+                {
+                  "name": "bannerImage",
+                  "selector": "div:nth-child(1)>div>picture>img[src]"
+                },
+                {
+                  "name": "bannerImageAlt",
+                  "selector": "div:nth-child(1)>div>picture>img[alt]"
+                },
+                {
+                  "name": "benefit1",
+                  "selector": "div:nth-child(2)>div:nth-child(1)"
+                },
+                {
+                  "name": "benefit2",
+                  "selector": "div:nth-child(2)>div:nth-child(2)"
+                },
+                {
+                  "name": "benefit3",
+                  "selector": "div:nth-child(2)>div:nth-child(3)"
                 }
               ]
             }
@@ -230,6 +373,40 @@
           }
         },
         {
+          "title": "Embed",
+          "id": "embed",
+          "model": "embed",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "url",
+                  "selector": "div>div>p>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Form",
+          "id": "form",
+          "model": "form",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "formUrl",
+                  "selector": "div>div>p>a[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "model": "fragment",
@@ -245,6 +422,27 @@
                 {
                   "name": "fragmentUrlText",
                   "selector": "div>div>p>a"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Hero Video",
+          "id": "hero-video",
+          "model": "hero-video",
+          "plugins": {
+            "da": {
+              "rows": 2,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "videoUrl",
+                  "selector": "div:nth-child(1)>div>p>a[href]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)>div"
                 }
               ]
             }

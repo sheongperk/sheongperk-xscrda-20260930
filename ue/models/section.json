@@ -24,6 +24,10 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Grey",
+              "value": "grey"
             }
           ]
         }
@@ -36,12 +40,17 @@
       "components": [
         "accordion",
         "cards",
+        "cards-offer",
         "carousel",
+        "carousel-featured",
+        "carousel-gallery",
         "columns",
+        "columns-benefits",
         "embed",
         "fragment",
         "form",
         "hero",
+        "hero-video",
         "image",
         "quote",
         "search",

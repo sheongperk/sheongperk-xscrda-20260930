@@ -1,0 +1,64 @@
+{
+  "definitions": [
+    {
+      "title": "Columns Benefits",
+      "id": "columns-benefits",
+      "model": "columns-benefits",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div class=\"columns-benefits\"><div><div></div></div><div><div></div><div></div><div></div></div></div>",
+          "fields": [
+            { "name": "bannerImage", "selector": "div:nth-child(1)>div>picture>img[src]" },
+            { "name": "bannerImageAlt", "selector": "div:nth-child(1)>div>picture>img[alt]" },
+            { "name": "benefit1", "selector": "div:nth-child(2)>div:nth-child(1)" },
+            { "name": "benefit2", "selector": "div:nth-child(2)>div:nth-child(2)" },
+            { "name": "benefit3", "selector": "div:nth-child(2)>div:nth-child(3)" }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "columns-benefits",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "bannerImage",
+          "label": "Banner Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "bannerImageAlt",
+          "label": "Banner Image Alt",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "benefit1",
+          "label": "Benefit 1 (icon and linked label)",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "benefit2",
+          "label": "Benefit 2 (icon and linked label)",
+          "value": ""
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "benefit3",
+          "label": "Benefit 3 (icon and linked label)",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

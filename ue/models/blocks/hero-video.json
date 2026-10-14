@@ -1,0 +1,41 @@
+{
+  "definitions": [
+    {
+      "title": "Hero Video",
+      "id": "hero-video",
+      "model": "hero-video",
+      "plugins": {
+        "da": {
+          "rows": 2,
+          "columns": 1,
+          "fields": [
+            { "name": "videoUrl", "selector": "div:nth-child(1)>div>p>a[href]" },
+            { "name": "text", "selector": "div:nth-child(2)>div" }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hero-video",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "videoUrl",
+          "label": "Video URL",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
